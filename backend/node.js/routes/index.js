@@ -1,3 +1,3 @@
-exports.index = function(req, res){
-    res.render('index', { title: 'Express' });
+exports.attachHandlers = function attachHandlers(app){
+    require('./api')(app);
 };

@@ -1,8 +1,8 @@
 var express = require('express');
 var routes = require('./routes');
-var stories = require('./routes/stories')
 var http = require('http');
 var path = require('path');
+var packageInfo = require('./package.json');
 
 var app = express();
 
@@ -22,7 +22,12 @@ if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }
 
-app.get('/', stories.getAll);
+routes.attachHandlers(app);
+
+//app.get('/api', function(req, res){
+//    res.send("Lissome API version " + packageInfo.version);
+//});
+//app.get('/api/stories', stories.getAll)
 
 http.createServer(app).listen(app.get('port'), function(){
     console.log('Express server listening on port ' + app.get('port'));

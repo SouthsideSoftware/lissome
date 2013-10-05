@@ -1,3 +1,3 @@
 exports.getAll = function(req, res){
-    res.send({id: 1, name: 'tom'});
+    res.json({id: 1, name: 'tom'});
 }
