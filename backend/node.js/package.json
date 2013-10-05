@@ -5,7 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "grunt": "~0.4.1",
-    "express": "~3.3.7",
+    "express": "~3.4",
+    "connect": "~2.9",
     "jade": "~0.35.0"
   },
   "devDependencies": {},
