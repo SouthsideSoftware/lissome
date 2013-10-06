@@ -24,11 +24,6 @@ if ('development' == app.get('env')) {
 
 routes.attachHandlers(app);
 
-//app.get('/api', function(req, res){
-//    res.send("Lissome API version " + packageInfo.version);
-//});
-//app.get('/api/stories', stories.getAll)
-
 http.createServer(app).listen(app.get('port'), function(){
     console.log('Express server listening on port ' + app.get('port'));
 });
