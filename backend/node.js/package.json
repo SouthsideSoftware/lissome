@@ -4,10 +4,12 @@
   "description": "Backend for agile board",
   "main": "app.js",
   "dependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "~0.4",
     "express": "~3.4",
     "connect": "~2.9",
-    "jade": "~0.35.0"
+    "jade": "~0.35",
+    "passport": "~0.1",
+    "passport-local": "~0.1"
   },
   "devDependencies": {},
   "scripts": {
