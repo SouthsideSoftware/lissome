@@ -60,11 +60,11 @@ body
                                 a(href='#') Separated link
                             li
                                 a(href='#') One more separated link
-                form.navbar-form.navbar-right
+                form.navbar-form.navbar-right(action='/login',method='post')
                     .form-group
-                        input.form-control(type='text', placeholder='Email')
+                        input.form-control(type='text', placeholder='Email', name='username')
                     .form-group
-                        input.form-control(type='password', placeholder='Password')
+                        input.form-control(type='password', placeholder='Password', name='password')
                     button.btn.btn-success(type='submit') Sign in
             //
               /.navbar-collapse
